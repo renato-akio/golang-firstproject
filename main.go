@@ -15,6 +15,8 @@ import (
 // gerar build para windows  GOOS=windows go build main.go
 // atualizar pacote: go mod tidy
 // executar sqlite3: sqlite3 db.sqlite3
+// _ "github.com/mattn/go-sqlite3"  quando nao está utilizando o pacote diretamente, para nao ficar gerando erro
+// utilizar o _ na importacao do pacote
 
 type Car struct {
 	Model string
